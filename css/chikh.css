@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --color-wsayi:#eff7fa;
+}
+
+.navbar {
+    background: var(--dark-color);
+}
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    color: var(--green-color);
+}
+.navbar-toggler {
+    outline: none;
+    box-shadow: none !important;
+}
+.navbar-toggler-icon {
+    /* border: white 1px solid; */
+    padding: 2px;
+    border-radius: 10px;
+}
+.search svg {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.butt {
+    background: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.butt:hover {
+    color: var(--green-color) !important;
+    text-shadow: 0px 0px 1px;
+}
+.landing {
+    background: var(--dark-color);
+    min-height: calc(100vh - 60px);
+}
+
+.main-title {
+    color: var(--dark-color);
+}
+.main-title::after {
+    content: "";
+    background: var(--green-color);
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    transform: translateX(-50%);
+}
+.row .cool {
+    height: 200px;
+    margin-top: 70px;
+}
+.cool h4 {
+    margin-top: 8.5rem;
+    margin-bottom: 1rem;
+    color: var(--bs-yellow);
+    text-transform: uppercase;
+}
+.icons .icon {
+    position: absolute;
+}
+.cool .icons {
+    display: flex;
+    flex-direction: column;
+}
+.icons .num {
+    font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--green-color);
+    opacity: 0.2;
+}
+.icons .pen {
+    font-size: 3rem;
+    color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4.5rem;
+}
+
+.our-work {
+    background: var(--color-wsayi);
+}
+.our-work .categ li {
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    color: var(--dark-color);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 200ms;
+}
+.our-work .categ li:not(.active):hover {
+    opacity: 1;
+}
+.categ .active {
+    opacity: 1 !important;
+    background-color: var(--red-color);
+    color: var(--yellow-color) !important;
+}
+.cola {
+    margin-bottom: 1rem;
+}
+.cola img {
+    transition: 100ms;
+}
+.cola img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+}
+.stuff .description {
+    max-width: 500px;
+}
+.team {
+ background: var(--color-wsayi);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .row>* {
+    padding: 2px !important;
+    margin-bottom: 20px;
+}
+.team .row h4 {
+    background: var(--green-color);
+}
+.start-proj {
+    background: var(--dark-color);
+}
+
+.subscribe {
+    background: var(--yellow-color);
+}
+.subscribe .subss {
+    color: var(--dark-color);
+}
+.subscribe .email::placeholder {
+    color: white;
+}
+.subscribe .email {
+    border: none;
+    outline: none !important;
+    border-bottom: 1px solid white;
+    padding: 2px;
+}
+.subscribe .btn {
+    color: var(--yellow-color);
+    background: var(--dark-color);
+    opacity: 0.9;
+}
+.subscribe .btn:hover {
+    opacity: 1;
+    color: var(--yellow-color);
+}
+
+footer {
+    background: var(--dark-color);
+}
+footer .lks li {
+    margin-bottom: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+footer .lks li:hover {
+    color: white;
+}
+footer .socials li svg{
+    font-size: 35px;
+    color: var(--color-wsayi);
+    transition: 200ms;
+    cursor: pointer;
+}
+footer .fb:hover {
+    color: #1877f2;
+}
+footer .tw:hover {
+    color: #1da1f2;
+}
+footer .insta:hover {
+    color: #f77737;
+}
+footer .col-md-6 {
+    margin-bottom: 20px;
+}
+.blog .card {
+    margin: auto;
+    margin-top: 20px;
+}
